@@ -4,10 +4,34 @@
              xmlns:local="clr-namespace:BMI2"
              x:Class="BMI2.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="CenterAndExpand">
+            <Label Text="身長を入力してください(cm)" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="20"/>
+
+            <Entry x:Name="Height" />
+
+            <Label Text="体重を入力してください(kg)" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="20"/>
+
+            <Entry x:Name="Weight" />
+
+            <Button Text="BMI計算"
+                    Clicked="Button_Clicked" 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+
+            <Label Text=""
+                   x:Name="Bmi" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"
+                   FontSize="30"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

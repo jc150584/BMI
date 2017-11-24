@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center"
                      HorizontalOptions="CenterAndExpand">
+            <Label Text="JK3A18 澤田" />
             <Label Text="身長を入力してください(cm)" 
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
